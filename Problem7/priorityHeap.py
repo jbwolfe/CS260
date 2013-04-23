@@ -176,3 +176,4 @@ class PriorityHeap(Heap):
 		f.close()
 		os.system('dot -Tpng -O vizData')
 		os.system('eog vizData.png')
+		
