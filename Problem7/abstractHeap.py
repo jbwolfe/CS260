@@ -128,9 +128,13 @@ class Heap(metaclass=ABCMeta):
 
 	@abstractmethod
 	def heapMinimum(self):
-		"""~~~
-		 DOCUMENT THIS!
-		 ~~~"""
+		"""The HEAPMINIMUM procedure uses the equation (x*2)+1 to find the
+		 leftmost child without calculating outside the length of the array.
+		 It starts at 0 (the root) and goes from there. Then a for loop finds
+		 the minimum value and returns its index.
+		 
+		This procedure takes O(h) time since the number of loops is based off
+		 of the height of the tree."""
 
 	@abstractmethod
 	def extractMin(self):
